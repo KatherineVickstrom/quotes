@@ -1,0 +1,27 @@
+body {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+h1 {
+  text-align: center;
+}
+.wrap {
+    position: relative;
+    left: 50%;
+    display: inline-block;
+}
+.content {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+footer {
+  padding: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+footer img {
+  border-radius: 10%;
+}

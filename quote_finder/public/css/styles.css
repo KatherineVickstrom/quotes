@@ -1,0 +1,21 @@
+body {
+  margin: 50px;
+}
+.wrap {
+    position: relative;
+    left: 50%;
+    display: inline-block;
+}
+.content {
+    float: left;
+    position: relative;
+    left: -50%;
+}
+footer {
+  padding: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+footer img {
+  border-radius: 10%;
+}

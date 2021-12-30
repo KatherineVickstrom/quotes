@@ -1,0 +1,39 @@
+<%- include("partials/header.ejs") %>
+<body class="text-white bg-dark">
+ 
+<div class="wrap">
+  <div class="content">
+ <h1 class="text-center"> Quotes Found </h1>
+ <% for (let i = 0; i < quotes.length; i++) { %>
+      <%= quotes[i].quote %> <br>
+      -<em>
+        <a href="#" id="<%=quotes[i].authorId%>">
+          <%= quotes[i].firstName%> <%=quotes[i].lastName %>
+        </a>
+      </em> <br><br>
+  <% } %>
+   </div>
+</div>
+
+  <div id="authorModal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h5 class="modal-title">Author Information</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-dark">
+        <div id="authorInfo"></div>
+      </div>
+      <div class="modal-footer bg-dark">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+<%- include("partials/footer.ejs") %>
+<script src="/js/scripts.js"></script>
+</body>
+
+
